@@ -1,0 +1,68 @@
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search xelp employees, skills & more" aria-label="Search xelp employees" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+  </div>
+</div>
+
+<div class="container">
+<div class="row" style="background-color:lightgray;">
+<div class="card col-md-4" style="width: 18rem;border:0;margin:5px;padding:30px;background-color:gray;">
+  <img class="card-img-top" src="../../assets/images/profile.jpg" alt="Card image cap" style="border-radius:5px;">
+</div>
+
+<div class="card col-md-7" style="width:50%;border:0;margin:5px;background-color:lightgray;">
+  <form novalidate #angForm="ngForm" (ngSubmit)="updateEmployee()">
+    <div class="input-group m-1">
+  <div class="input-group-prepend">
+    <span class="input-group-text">First and last name</span>
+  </div>
+    <input type="text" [(ngModel)]="employee.first_name" class="form-control" name="first_name"/>
+    <input type="text" [(ngModel)]="employee.last_name" class="form-control" name="last_name"/>
+</div>
+<div class="input-group m-1">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Phone No.</span>
+  </div>
+    <input type="text" [(ngModel)]="employee.phone_no" class="form-control" name="phone_no"/>
+     <div class="input-group-prepend">
+    <span class="input-group-text">Emergency No.</span>
+  </div>
+    <input type="text" [(ngModel)]="employee.emergency_no" class="form-control" name="emergency_no"/>
+</div>
+<div class="input-group m-1">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Location</span>
+  </div>
+    <input type="text" [(ngModel)]="employee.location" class="form-control" name="location"/>
+</div>
+<div class="input-group m-1">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Blood Group</span>
+  </div>
+    <input type="text" [(ngModel)]="employee.blood_group" class="form-control" name="blood_group"/>
+</div>
+<div class="input-group m-1">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Current Address</span>
+  </div>
+    <input type="text" [(ngModel)]="employee.current_address"  class="form-control" name="current_address"/>
+</div>
+<div class="input-group m-1">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Email</span>
+  </div>    <input type="text" [(ngModel)]="employee.email" class="form-control"  name="email"/>
+</div>
+<div class="input-group m-1">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Resume</span>
+  </div>    <input type="text" [(ngModel)]="employee.resume_url" class="form-control"  name="resume_url"/>
+</div>
+    <button type="submit" class="btn btn-sm btn-primary m-1 float-right" [disabled]="angForm.form.invalid">Update</button>
+    &nbsp;&nbsp;
+    <button type="button" class="btn btn-sm btn-secondary m-1 float-right">Clear</button>
+  </form>
+</div>
+
+</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search xelp employees, skills & more" aria-label="Search xelp employees" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+  </div>
+</div>
+
+<div class="container">
+<div class="row" style="background-color:lightgray;">
+<div class="card col-md-4" style="width: 18rem;border:0;margin:5px;padding:30px;background-color:gray;">
+  <img class="card-img-top" src="../../assets/images/profile.jpg" alt="Card image cap" style="border-radius:5px;">
+</div>
+
+<div class="card col-md-7" style="width:50%;border:0;margin:5px;background-color:lightgray;">
+<!--   <div class="card-body"> -->
+    <p class="card-text" *ngIf="employee.first_name || employee.last_name">{{employee.first_name}}  {{employee.last_name}}</p>
+    <p class="card-text" *ngIf="employee.phone_no">{{employee.phone_no}}  &nbsp;&nbsp;&nbsp;&nbsp; {{employee.emergency_no}}</p>
+    <p class="card-text" *ngIf="employee.location">{{employee.location}}</p>
+    <p class="card-text" *ngIf="employee.blood_group">{{employee.blood_group}}</p>
+    <p class="card-text" *ngIf="employee.current_address">{{employee.current_address}}</p>
+    <p class="card-text" *ngIf="employee.email">{{employee.email}}</p>
+    <p class="card-text" *ngIf="employee.role_id">{{employee.role_id}}</p>
+    <p class="card-text" *ngIf="employee.resume_url">{{employee.resume_url}}</p>
+    <p class="card-text">Skilled at skills...{{employee.skills_id}}</p>
+    <p class="card-text">Current projects: {{employee.projects_id}}</p>
+  <!-- </div> -->
+</div>
+
+</div>
+</div>

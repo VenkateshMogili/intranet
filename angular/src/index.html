@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>INTRANET</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href="assets/css/simple-sidebar.css" rel="stylesheet"/>
+</head>
+<body>
+  <app-root></app-root>
+    <!-- Bootstrap core JavaScript -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+  	$(document).ready(function(){
+  		$("#menu-toggle").click(function(e) {
+      	e.preventDefault();
+      	$("#wrapper").toggleClass("toggled");
+    	});
+  	});
+  </script>
+
+</body>
+</html>

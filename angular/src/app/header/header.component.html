@@ -1,0 +1,55 @@
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">
+      	<img src="../../assets/images/profile.jpg" style="width:50px;height:50px;border-radius:100px"/>
+      	Venkatesh Mogili
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-list"></i> Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-calendar"></i> Leave</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-rupee"></i> Payslip</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-comment"></i> Feedback</a>
+        <a class="list-group-item list-group-item-action bg-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-users"></i>
+    Xelp Employees
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" routerLink="/employees">Give basic details</a>
+    <a class="dropdown-item" routerLink="/employees">View details</a>
+    <a class="dropdown-item" routerLink="/updateskills/14">Update skills</a>
+  </div>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-laptop"></i> Projects</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-user-plus"></i> Roles</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle"><i class="fa fa-bars"></i></button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link">INTRANET <i class="fa fa-cloud text-primary"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+      	<br>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
