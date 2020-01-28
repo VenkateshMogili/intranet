@@ -1,4 +1,5 @@
-# Welcome to Intranet
+<p align="center"><img src="https://www.naseej.com/wp-content/uploads/2018/02/knowledge-capturing.jpg" width="400"></p>
+<h1 align="center">INTRANET</h1>
 
 ### NodeJS Commands
     node server.js
